@@ -1,1 +1,24 @@
 *,*:before,*:after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#0d0d0d;background:#fff;line-height:1.6}
+/* ===== Seção "Como a inteligência pericial ajuda" (mensagens B&C Informa) ===== */
+.pericial{background:#f4f7fa;padding:64px 0}
+.pericial .bc-container{max-width:1080px;margin:0 auto;padding:0 20px}
+.pericial-kicker{text-align:center;color:#1b3a5c;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:13px;margin-bottom:10px}
+.pericial-title{text-align:center;font-size:30px;font-weight:800;color:#0a2540;margin-bottom:8px}
+.pericial-sub{text-align:center;color:#41566b;max-width:680px;margin:0 auto 40px}
+.wa-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.wa-card{background:#e7f3e3;border-radius:18px;padding:18px 16px;box-shadow:0 2px 10px rgba(10,37,64,.08);display:flex;flex-direction:column}
+.wa-card:nth-child(2){background:#e3eef7}
+.wa-card:nth-child(3){background:#f7efe3}
+.wa-card:nth-child(4){background:#f3e7f0}
+.wa-card:nth-child(5){background:#e3f2f0}
+.wa-card:nth-child(6){background:#f0efe3}
+.wa-head{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.wa-avatar{width:34px;height:34px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.wa-avatar svg{width:20px;height:20px;fill:#fff}
+.wa-name{font-weight:700;color:#0a2540;font-size:14px}
+.wa-time{font-size:11px;color:#7d8fa1;margin-left:auto}
+.wa-bubble{background:#fff;border-radius:12px 12px 12px 4px;padding:12px 14px;font-size:13.5px;line-height:1.55;color:#1c2b3a;white-space:pre-line}
+.wa-bubble strong{color:#0a2540}
+.wa-cta{margin-top:12px;align-self:flex-start;display:inline-block;background:#25d366;color:#fff;font-weight:700;font-size:13px;padding:8px 14px;border-radius:999px;text-decoration:none}
+.wa-cta:hover{background:#1fb955}
+@media(max-width:640px){.pericial-title{font-size:24px}.wa-grid{grid-template-columns:1fr}}
