@@ -152,6 +152,25 @@ body{padding-top:64px}
 .btn-diag{display:inline-block;background:var(--petroleo);color:#fff;font-weight:700;font-size:15px;padding:12px 28px;border-radius:999px;text-decoration:none;border:2px solid var(--petroleo);transition:background .2s}
 .btn-diag:hover{background:var(--petroleo-medio)}
 </style>
+<!-- Google tag (gtag.js) - B&C Saúde GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FVC39DC4JQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FVC39DC4JQ');
+  // Rastreamento de leads: clique no WhatsApp e telefone
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href]');
+    if(!a) return;
+    var href = a.getAttribute('href');
+    if(href && href.indexOf('wa.me') !== -1){
+      gtag('event', 'generate_lead', { 'lead_type': 'whatsapp', 'page_location': window.location.pathname });
+    } else if(href && href.indexOf('tel:') === 0){
+      gtag('event', 'generate_lead', { 'lead_type': 'telefone', 'page_location': window.location.pathname });
+    }
+  });
+</script>
 </head>
 <body>
 
