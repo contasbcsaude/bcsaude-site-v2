@@ -4,12 +4,12 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Medicina do Trabalho em Campo Grande, MS — B&C Saúde</title>
-<meta name="description" content="Exames admissionais, periódicos e gestão de SST para empresas e escritórios de Campo Grande. Medicina do Trabalho, Segurança e Perícia Médica integradas. Fale com a B&C."/>
+<meta name="description" content="A B&C atende empresas de Campo Grande e região com Medicina do Trabalho, Segurança do Trabalho e Perícia Médica integradas. Conheça o diferencial pericial."/>
 <meta name="robots" content="index, follow"/>
 <meta name="theme-color" content="#0a2540"/>
 <link rel="canonical" href="https://bcsaude.com.br/medicina-do-trabalho-campo-grande"/>
 <meta property="og:title" content="Medicina do Trabalho em Campo Grande, MS — B&C Saúde"/>
-<meta property="og:description" content="Exames admissionais, periódicos e gestão de SST para empresas e escritórios de Campo Grande. Medicina do Trabalho, Segurança e Perícia Médica integradas."/>
+<meta property="og:description" content="A B&C atende empresas de Campo Grande e região com Medicina do Trabalho, Segurança do Trabalho e Perícia Médica integradas. Conheça o diferencial pericial."/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://bcsaude.com.br/medicina-do-trabalho-campo-grande"/>
 <meta property="og:image" content="https://i.imgur.com/0njUm4v.png"/>
@@ -54,14 +54,6 @@ body{padding-top:64px}
 .card-lista li{padding:7px 0 7px 26px;position:relative;font-size:14.5px;color:#33475c;border-bottom:1px solid #eef3f8}
 .card-lista li:last-child{border-bottom:none}
 .card-lista li:before{content:"✓";position:absolute;left:0;color:var(--verde);font-weight:700}
-.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
-@media(max-width:860px){.trio{grid-template-columns:1fr}}
-.mini-card{background:#fff;border-radius:14px;padding:20px;box-shadow:0 2px 10px rgba(10,37,64,.06)}
-.mini-card h3{font-size:15.5px;color:var(--petroleo);margin-bottom:8px}
-.mini-card p{font-size:14px}
-.faq-item{background:#fff;border-radius:14px;padding:16px 20px;margin-bottom:12px;box-shadow:0 2px 10px rgba(10,37,64,.06)}
-.faq-item summary{font-weight:700;color:var(--petroleo);cursor:pointer;font-size:15.5px}
-.faq-item p{margin-top:10px;font-size:14.5px}
 .cta{text-align:center;background:#fff;border-radius:16px;padding:30px 24px;margin-top:26px;box-shadow:0 2px 12px rgba(10,37,64,.07);border-top:4px solid var(--verde)}
 .cta p{font-size:16.5px;margin-bottom:16px}
 .cta-botoes{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
@@ -73,6 +65,25 @@ body{padding-top:64px}
 .links-uteis a{color:#2a6a8e;font-weight:600;text-decoration:none}
 footer{background:var(--petroleo);color:#c9d6e2;padding:28px 0;font-size:13.5px;text-align:center}
 </style>
+<!-- Google tag (gtag.js) - B&C Saúde GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FVC39DC4JQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FVC39DC4JQ');
+  // Rastreamento de leads: clique no WhatsApp e telefone
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href]');
+    if(!a) return;
+    var href = a.getAttribute('href');
+    if(href && href.indexOf('wa.me') !== -1){
+      gtag('event', 'generate_lead', { 'lead_type': 'whatsapp', 'page_location': window.location.pathname });
+    } else if(href && href.indexOf('tel:') === 0){
+      gtag('event', 'generate_lead', { 'lead_type': 'telefone', 'page_location': window.location.pathname });
+    }
+  });
+</script>
 </head>
 <body>
 
@@ -94,9 +105,9 @@ footer{background:var(--petroleo);color:#c9d6e2;padding:28px 0;font-size:13.5px;
 
 <section class="hero">
   <div class="container">
-    <span class="badge">Empresas e escritórios de Campo Grande e região</span>
+    <span class="badge">Atendemos empresas de Campo Grande e região</span>
     <h1>Medicina do Trabalho em Campo Grande</h1>
-    <p>A B&C atende empresas e escritórios de Campo Grande com um modelo que vai além do exame: Medicina do Trabalho, Segurança do Trabalho e Perícia Médica trabalhando juntas — com inteligência pericial que nenhuma clínica da capital oferece do mesmo jeito.</p>
+    <p>A B&C atende empresas de Campo Grande e região com um modelo que vai além do exame: Medicina do Trabalho, Segurança do Trabalho e Perícia Médica trabalhando juntas — com inteligência pericial que nenhuma clínica da capital oferece do mesmo jeito.</p>
   </div>
 </section>
 
@@ -112,46 +123,12 @@ footer{background:var(--petroleo);color:#c9d6e2;padding:28px 0;font-size:13.5px;
       <div class="card-lista">
         <h3>O que sua empresa em Campo Grande recebe</h3>
         <ul>
-          <li>Exames ocupacionais em lote ou avulso (admissional a demissional)</li>
-          <li>Convocação de periódicos gerenciada pela B&C</li>
+          <li>Exames ocupacionais completos (admissional a demissional)</li>
           <li>PCMSO e PGR com gestão de verdade, não só documento</li>
           <li>Análise pericial de atestados e afastamentos</li>
           <li>Suporte em fiscalizações, eSocial e CAT</li>
           <li>Decisão técnica com segurança jurídica</li>
         </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="kicker">Volume, escala e prazo — a rotina de quem contrata em CG</div>
-    <h2>Do exame avulso à gestão completa</h2>
-    <p class="txt">Escritórios e empresas de Campo Grande contratam em volume: lote de admissionais quando o time cresce, periódico em escala, vários ASO vencendo juntos. É exatamente esse tipo de demanda que a B&C opera bem: <strong>convocação e agendamento gerenciados por nós</strong>, exames em janelas que não travam a operação e documentos transmitidos no eSocial.</p>
-    <div class="chips">
-      <span>Contabilidade</span>
-      <span>Advocacia</span>
-      <span>Engenharia</span>
-      <span>Transporte e logística</span>
-      <span>Comércio</span>
-      <span>Indústria</span>
-      <span>Agronegócio</span>
-      <span>Clínicas e consultórios</span>
-    </div>
-    <p class="txt">E quando aparece o caso difícil — atestado que não fecha, afastamento que se estica, exame alterado — entra a <strong>inteligência pericial</strong>: análise técnica de funcionário versus função antes que o problema vire custo.</p>
-    <div class="trio">
-      <div class="mini-card">
-        <h3>Exames em lote sem parar a operação</h3>
-        <p>Admissionais de contratação e periódicos em escala, agendados em janelas que combinam com a sua rotina.</p>
-      </div>
-      <div class="mini-card">
-        <h3>eSocial SST em dia</h3>
-        <p>ASOs e eventos transmitidos no prazo, com controle de vencimentos acompanhado pela B&C.</p>
-      </div>
-      <div class="mini-card">
-        <h3>Caso difícil tem olhar pericial</h3>
-        <p>Atestado, afastamento e retorno do INSS analisados por médico com experiência em perícia.</p>
       </div>
     </div>
   </div>
@@ -171,28 +148,10 @@ footer{background:var(--petroleo);color:#c9d6e2;padding:28px 0;font-size:13.5px;
       <span>Gestão de afastamentos</span>
     </div>
     <p class="txt">Atendimento em todo o estado, com 4 unidades em MS — Jardim, Bonito, Bela Vista e Nioaque — e equipes que atendem empresas de Campo Grande e região.</p>
-    <div class="kicker">Dúvidas de quem contrata em Campo Grande</div>
-    <h2>Perguntas frequentes</h2>
-    <details class="faq-item">
-      <summary>Minha empresa é pequena. Precisa de tudo isso?</summary>
-      <p>Se tem funcionário, tem obrigação: exame admissional, ASO e PCMSO fazem parte da rotina de qualquer empresa com colaborador CLT. O que muda é o tamanho do programa — dimensionamos pelo seu porte, sem vender o que não precisa.</p>
-    </details>
-    <details class="faq-item">
-      <summary>Quanto custa o exame admissional em Campo Grande?</summary>
-      <p>Depende do volume, da frequência e dos exames complementares que o risco da função exige. Por isso não publicamos tabela fixa: a conversa começa pelo porte e pela rotina da sua empresa, e a proposta sai do que ela realmente precisa.</p>
-    </details>
-    <details class="faq-item">
-      <summary>Consigo agendar exames em lote sem parar minha equipe?</summary>
-      <p>Sim. Convocamos, agendamos e organizamos os exames em janelas que combinam com a sua operação — admissionais na contratação e periódicos em escala — e transmitimos os documentos no eSocial.</p>
-    </details>
-    <details class="faq-item">
-      <summary>O que é a inteligência pericial na prática?</summary>
-      <p>É o olhar do médico com experiência em perícia médica sobre atestados, afastamentos e exames alterados. Em vez do RH decidir sozinho, cada caso é analisado tecnicamente — funcionário versus função — com segurança jurídica para a empresa.</p>
-    </details>
     <div class="cta">
       <p>Sua empresa em Campo Grande tem uma situação de saúde ocupacional para resolver? <strong>Fale com a B&C</strong> — a conversa começa pelo que a sua empresa precisa.</p>
       <div class="cta-botoes">
-        <a class="btn-wa" href="https://wa.me/5567981131076?text=Ol%C3%A1!%20Tenho%20uma%20empresa%20em%20Campo%20Grande%20e%20quero%20entender%20como%20a%20B%26C%20pode%20ajudar." target="_blank" rel="noopener">Falar com a B&C no WhatsApp</a>
+        <a class="btn-wa" href="https://wa.me/5567981131076?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20B%26C%20e%20quero%20entender%20como%20voc%C3%AAs%20podem%20ajudar%20minha%20empresa." target="_blank" rel="noopener">Falar com a B&C no WhatsApp</a>
         <a class="btn-diag" href="/diagnostico">Fazer diagnóstico gratuito</a>
       </div>
       <div class="links-uteis">
@@ -210,18 +169,6 @@ footer{background:var(--petroleo);color:#c9d6e2;padding:28px 0;font-size:13.5px;
 </footer>
 <script>
 document.querySelector('.menu-toggle').addEventListener('click',function(){document.querySelector('.nav-links').classList.toggle('open')});
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "Minha empresa é pequena. Precisa de tudo isso?", "acceptedAnswer": {"@type": "Answer", "text": "Se tem funcionário, tem obrigação: exame admissional, ASO e PCMSO fazem parte da rotina de qualquer empresa com colaborador CLT. O que muda é o tamanho do programa — dimensionamos pelo porte, sem vender o que não precisa."}},
-    {"@type": "Question", "name": "Quanto custa o exame admissional em Campo Grande?", "acceptedAnswer": {"@type": "Answer", "text": "Depende do volume, da frequência e dos exames complementares que o risco da função exige. Não publicamos tabela fixa: a proposta sai do porte e da rotina da empresa."}},
-    {"@type": "Question", "name": "Consigo agendar exames em lote sem parar minha equipe?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Convocamos, agendamos e organizamos os exames em janelas que combinam com a operação — admissionais na contratação e periódicos em escala — e transmitimos os documentos no eSocial."}},
-    {"@type": "Question", "name": "O que é a inteligência pericial na prática?", "acceptedAnswer": {"@type": "Answer", "text": "É o olhar do médico com experiência em perícia médica sobre atestados, afastamentos e exames alterados. Cada caso é analisado tecnicamente — funcionário versus função — com segurança jurídica para a empresa."}}
-  ]
-}
 </script>
 </body>
 </html>
