@@ -136,8 +136,8 @@ ${y}`:`Mensagem: ${y}`:w+="Gostaria de falar com a B&C.",window.open(`https://wa
         .stat-num{font-size:2rem;font-weight:800;color:var(--petroleo)}
         .stat-label{font-size:.82rem;color:var(--cinza);font-weight:600;text-transform:uppercase;letter-spacing:.06em;margin-top:4px}
         .sobre-box{border-radius:20px;overflow:hidden;box-shadow:var(--shadow-lg);background:var(--petroleo)}
-        .sobre-box-img{width:100%;height:260px;object-fit:cover;display:block}
-        .sobre-box-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(10,37,64,.85));color:#fff;padding:40px 20px 14px;font-size:.85rem}
+        .sobre-box-img{width:100%;height:380px;object-fit:cover;object-position:center 22%;display:block}
+        .sobre-box-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(10,37,64,.9));color:#fff;padding:28px 20px 12px;font-size:.85rem}
         .sobre-box{position:relative}
         @media(max-width:960px){.sobre-grid{grid-template-columns:1fr;gap:40px}}
 
