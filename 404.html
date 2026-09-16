@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Redirecionando...</title>
-    <script>
-      // GitHub Pages SPA redirect
-      var pathSegmentsToKeep = 0;
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
-    </script>
-  </head>
-  <body></body>
+<head>
+<meta charset="utf-8">
+<title>Redirecionando...</title>
+<script>
+var MAP = {"/sobre-nos": "/experiencia", "/sobre-nos/": "/experiencia", "/blog/": "/duvidas", "/blog": "/duvidas", "/contato/": "/#contato", "/contato": "/#contato", "/pericias-medicas/": "/#servicos", "/pericias-medicas": "/#servicos", "/solicite-um-orcamento/": "/diagnostico", "/solicite-um-orcamento": "/diagnostico", "/agendamento-de-exames-medicos": "https://agendamentos-five.vercel.app/", "/agendamento-de-exames-medicos/": "https://agendamentos-five.vercel.app/", "/nosso-pessoal2": "/#unidades", "/nosso-pessoal2/": "/#unidades", "/l/por-que-integrar-seguranca-do-trabalho-medico-coordenador-e-pericia-medica-aumenta-a-seguranca-juridica-da-sua-empresa/": "/#diferencial"};
+var p = window.location.pathname;
+var dest = MAP[p] || MAP[p.replace(/\/+$/, '/') + '/'] || null;
+if (!dest) {
+  // tenta sem trailing slash
+  var p2 = p.replace(/\/+$/, '');
+  dest = MAP[p2] || null;
+}
+if (dest) {
+  window.location.replace(dest);
+} else {
+  window.location.replace('/?/' + p.slice(1));
+}
+</script>
+<meta http-equiv="refresh" content="0">
+</head>
+<body></body>
 </html>
