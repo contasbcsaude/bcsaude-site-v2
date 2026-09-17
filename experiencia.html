@@ -116,6 +116,12 @@ body{padding-top:64px}
 .menu-toggle{display:none;background:none;border:none;color:#fff;font-size:1.6rem;cursor:pointer}
 .nav-links.open{display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:#0a2540;padding:20px 24px;gap:16px;box-shadow:0 12px 30px rgba(0,0,0,.3)}
 @media(max-width:900px){.nav-links{display:none}.menu-toggle{display:block}.nav-links.open{display:flex}}
+
+/* Galeria de estrutura */
+.galeria{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.galeria img{width:100%;height:200px;object-fit:cover;border-radius:12px;box-shadow:0 2px 12px rgba(10,37,64,.12);display:block}
+.galeria img:hover{transform:scale(1.02);transition:transform .2s}
+@media(max-width:760px){.galeria{grid-template-columns:repeat(2,1fr)}.galeria img{height:140px}}
 </style>
 <!-- Google tag (gtag.js) - B&C Saúde GA4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVC39DC4JQ"></script>
@@ -267,6 +273,22 @@ document.querySelector('.menu-toggle').addEventListener('click', function(){
   </div>
 </section>
 
+
+<!-- ESTRUTURA REAL (fotos das unidades) -->
+<section>
+  <div class="container">
+    <div class="kicker">Nossa estrutura</div>
+    <h2>Do pequeno ao gigante: estrutura de verdade em cada unidade</h2>
+    <div class="galeria">
+      <img src="./fotos/recepcao.jpg" alt="Recepção da unidade Jardim da B&C Saúde"/>
+      <img src="./fotos/consultorio.jpg" alt="Consultório médico ocupacional"/>
+      <img src="./fotos/laboratorio.jpg" alt="Laboratório de exames complementares"/>
+      <img src="./fotos/espera-02.jpg" alt="Sala de espera confortável"/>
+      <img src="./fotos/exame-ecg.jpg" alt="Sala de exames — ECG"/>
+      <img src="./fotos/fachada.jpg" alt="Fachada da unidade Jardim — CRM dos médicos à vista"/>
+    </div>
+  </div>
+</section>
 
 <!-- CTA -->
 <section class="cta">
