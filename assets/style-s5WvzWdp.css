@@ -24,7 +24,7 @@
 .numstrip .stat-label{color:rgba(255,255,255,.75)}
 @media(max-width:768px){.numstrip{grid-template-columns:repeat(2,1fr)}}
 
-section[id]{scroll-margin-top:96px}
+section[id]{scroll-margin-top:116px}
 
 .service-body a,.service-list a{color:var(--accent);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(42,106,142,.35)}
 .service-body a:hover,.service-list a:hover{color:var(--petroleo);border-bottom-color:var(--petroleo)}
