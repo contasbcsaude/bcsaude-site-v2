@@ -50,4 +50,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <url><loc>https://www.bcsaude.com.br/servicos/pcmso</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcsaude.com.br/servicos/pgr</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcsaude.com.br/servicos/ltcat</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcsaude.com.br/servicos/aso</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcsaude.com.br/servicos/esocial</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
