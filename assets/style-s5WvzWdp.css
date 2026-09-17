@@ -23,3 +23,5 @@
 .numstrip .stat-num{color:#fff}
 .numstrip .stat-label{color:rgba(255,255,255,.75)}
 @media(max-width:768px){.numstrip{grid-template-columns:repeat(2,1fr)}}
+
+section[id]{scroll-margin-top:84px}

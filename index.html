@@ -131,6 +131,18 @@
     }
   });
 </script>
+    <script>
+    (function () {
+      function tryScroll(attempt) {
+        var h = window.location.hash;
+        if (!h || h === "#") return;
+        var el = document.querySelector(h);
+        if (el) { el.scrollIntoView({ behavior: "smooth" }); return; }
+        if (attempt < 40) setTimeout(function () { tryScroll(attempt + 1); }, 100);
+      }
+      window.addEventListener("load", function () { setTimeout(function () { tryScroll(0); }, 150); });
+    })();
+    </script>
 </head>
   <body>
     <div id="root"></div>
