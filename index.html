@@ -133,14 +133,20 @@
 </script>
     <script>
     (function () {
-      function tryScroll(attempt) {
+      function tryScroll() {
         var h = window.location.hash;
         if (!h || h === "#") return;
         var el = document.querySelector(h);
-        if (el) { el.scrollIntoView({ behavior: "smooth" }); return; }
-        if (attempt < 40) setTimeout(function () { tryScroll(attempt + 1); }, 100);
+        if (el) { el.scrollIntoView({ behavior: "smooth" }); return true; }
+        return false;
       }
-      window.addEventListener("load", function () { setTimeout(function () { tryScroll(0); }, 150); });
+      window.addEventListener("hashchange", function () { setTimeout(tryScroll, 60); });
+      var done = false;
+      function poll() {
+        if (tryScroll()) { done = true; return; }
+        if (!done) setTimeout(poll, 120);
+      }
+      if (window.location.hash && window.location.hash !== "#") setTimeout(poll, 120);
     })();
     </script>
 </head>
