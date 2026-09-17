@@ -83,9 +83,9 @@ ${y}`:`Mensagem: ${y}`:w+="Gostaria de falar com a B&C.",window.open(`https://wa
         /* ===== HEADER ===== */
         .bc-header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,37,64,.92);backdrop-filter:blur(10px);transition:var(--transition)}
         .bc-header.scrolled{box-shadow:0 4px 20px rgba(0,0,0,.25)}
-        .bc-nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+        .bc-nav{display:flex;align-items:center;justify-content:space-between;height:84px}
         .logo-wrap{display:flex;align-items:center;gap:12px}
-        .logo-img{height:56px;width:auto;background:transparent;padding:0;border-radius:0;box-shadow:none;transition:var(--transition)}
+        .logo-img{height:72px;width:auto;background:transparent;padding:0;border-radius:0;box-shadow:none;transition:var(--transition);filter:drop-shadow(0 2px 8px rgba(0,0,0,.35))}
         .logo-img:hover{transform:scale(1.03);box-shadow:0 4px 20px rgba(0,0,0,.3)}
         .logo-text-fallback{display:flex;align-items:center;gap:8px;background:var(--branco);padding:8px 16px;border-radius:14px;box-shadow:0 2px 12px rgba(0,0,0,.2);font-weight:800;font-size:1.3rem;color:var(--petroleo)}
         .logo-text-fallback span:last-child{color:var(--accent);font-weight:600;font-size:1rem}
@@ -229,7 +229,7 @@ ${y}`:`Mensagem: ${y}`:w+="Gostaria de falar com a B&C.",window.open(`https://wa
         /* ===== FOOTER ===== */
         .bc-footer{background:#071a2e;color:#a9bdce;padding:56px 0 0}
         .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px;padding-bottom:40px}
-        .footer-brand img{height:48px;width:auto;margin-bottom:16px}
+        .footer-brand img{height:64px;width:auto;margin-bottom:16px}
         .footer-brand p{font-size:.9rem;max-width:320px}
         .footer-col h4{color:#fff;font-size:.95rem;margin-bottom:16px;letter-spacing:.04em;text-transform:uppercase}
         .footer-col a{display:block;color:#a9bdce;text-decoration:none;font-size:.9rem;margin-bottom:10px}
