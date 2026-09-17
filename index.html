@@ -144,8 +144,8 @@
       var n = 0;
       function poll() {
         n++;
-        tryScroll();
-        if (n < 14) setTimeout(poll, 150);
+        if (tryScroll()) return;
+        if (n < 40) setTimeout(poll, 250);
       }
       if (window.location.hash && window.location.hash !== "#") setTimeout(poll, 120);
     })();
